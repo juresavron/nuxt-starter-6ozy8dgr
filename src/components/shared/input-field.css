@@ -1,0 +1,6 @@
+.input-field {
+  @apply w-full p-3 sm:p-4 bg-white/90 border border-gray-200/80 rounded-lg
+         focus:ring-2 focus:ring-blue-500 focus:border-blue-500 
+         transition-all duration-300 backdrop-blur-sm hover:bg-white/80 
+         placeholder:text-gray-400;
+}

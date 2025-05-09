@@ -1,0 +1,30 @@
+// Export individual icons directly from lucide-react
+// This allows tree-shaking to work properly
+export { Star } from 'lucide-react';
+export { Shield } from 'lucide-react';
+export { Users } from 'lucide-react';
+export { CheckCircle2 } from 'lucide-react';
+export { ArrowRight } from 'lucide-react';
+export { Building2 } from 'lucide-react';
+export { ExternalLink } from 'lucide-react';
+export { Pencil } from 'lucide-react';
+export { Trash2 } from 'lucide-react';
+export { Plus } from 'lucide-react';
+export { X } from 'lucide-react';
+export { Search } from 'lucide-react';
+export { ChevronDown } from 'lucide-react';
+export { ArrowUpDown } from 'lucide-react';
+export { Mail } from 'lucide-react';
+export { Phone } from 'lucide-react';
+export { AlertCircle } from 'lucide-react';
+export { TrendingUp } from 'lucide-react';
+export { Share2 } from 'lucide-react';
+export { CheckCircle } from 'lucide-react';
+export { Calendar } from 'lucide-react';
+export { Download } from 'lucide-react';
+export { Clock } from 'lucide-react';
+export { Sparkles } from 'lucide-react';
+export { Heart } from 'lucide-react';
+export { Loader2 } from 'lucide-react';
+export { RefreshCw } from 'lucide-react';
+export { ArrowLeft } from 'lucide-react';

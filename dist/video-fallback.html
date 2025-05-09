@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Player</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #000;
+    }
+    video {
+      max-width: 100%;
+      max-height: 100vh;
+    }
+  </style>
+</head>
+<body>
+  <video 
+    controls 
+    autoplay 
+    playsinline 
+    webkit-playsinline="true"
+    preload="auto"
+    src="https://f003.backblazeb2.com/file/ocenagor/0508(5).mov">
+    Your browser does not support the video tag.
+  </video>
+</body>
+</html>

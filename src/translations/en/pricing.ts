@@ -1,0 +1,105 @@
+export const pricing = {
+  badge: 'Pricing',
+  title: 'Simple, Transparent Packages',
+  subtitle: 'Choose a package that best suits your needs',
+  monthly: 'MONTHLY',
+  yearly: 'YEARLY',
+  yearlySavings: 'Save up to 20%',
+  mostPopular: 'Most Picked',
+  selectPlan: 'Select Package',
+  selectPlanMobile: 'Select',
+  viewDetails: 'View Details',
+  contactUs: 'Contact Us',
+  package: 'Package',
+  price: 'Price',
+  billing: 'Billing',
+  total: 'Total',
+  compareFeatures: 'Compare Features',
+  securePaymentInfo: 'Your data is securely encrypted',
+  pricingNote: 'All packages include a 14-day trial period and free technical support.',
+  proceedToCheckout: 'Proceed to Checkout',
+  processing: 'Processing...',
+  paymentSuccess: 'Payment Successful!',
+  orderReference: 'Order Reference Number',
+  thankYouMessage: 'Thank you for your purchase. Your payment has been processed successfully.',
+  confirmationEmail: 'We\'ve sent you a confirmation email with your order details. Our team will contact you shortly to set up your account.',
+  returnHome: 'Return to Home',
+  viewDashboard: 'View Dashboard',
+  orderSummary: 'Order Summary',
+  amount: 'Amount',
+  paymentStatus: 'Status',
+  orderDate: 'Order Date',
+  processingOrder: 'Your order is being processed. You will receive a confirmation email shortly.',
+  termsNotice: 'By proceeding, you agree to our Terms of Service and Privacy Policy. Your payment will be processed securely through the Stripe payment system.',
+  loadingCheckout: 'Loading...',
+  checkoutError: 'Checkout Error',
+  productNotFound: 'The selected package could not be found.',
+  backToPricing: 'Back to Pricing',
+  selectPackage: 'Please select a package',
+  loginToContinuePurchase: 'Please log in to continue with your purchase',
+  loginToContinue: 'Log in to continue',
+  authRequired: 'Authentication Required',
+  login: 'Login',
+  signup: 'Create Account',
+  loginSecurityMessage: 'Your account allows us to provide you with a secure purchase experience and access to your purchases.',
+  functionality: 'Feature',
+  numLocations: 'Number of unique codes for multiple users or departments (at one location)',
+  nfcEquipment: 'Included NFC equipment',
+  customReviewPage: 'Customized review page',
+  rewardType: 'Reward type',
+  gamification: 'Gamification',
+  emailPhoneCapture: 'Email / phone capture',
+  personalizedDesign: 'Personalized design of physical components',
+  teamContacts: 'Team contacts dissatisfied customers',
+  companyDashboard: 'Company results dashboard',
+  reportsDataExport: 'Reports and data export (CSV)', 
+  analytics: 'Analytics (responsiveness, trends)',
+  whiteLabel: 'White-label (no ocenagor.si logo)',
+  onboardingSystem: 'System onboarding',
+  questionnaire: 'Questionnaire about reasons for dissatisfaction',
+  support: 'Support',
+  // Feature values
+  rewardTypeValue: {
+    basic: 'Coupon for each review or no rewards',
+    advanced: 'Coupon for each review, lottery, or no rewards',
+    custom: 'Coupon for each review, lottery, or no rewards'
+  },
+  teamContactsValue: {
+    none: '—',
+    basic: 'Our team contacts',
+    advanced: '+ call report'
+  },
+  questionnaireValue: {
+    basic: 'Basic questionnaire',
+    industry: 'Industry-specific questionnaire',
+    custom: 'Custom questionnaire'
+  },
+  dashboardValue: {
+    none: '—',
+    basic: 'Basic',
+    advanced: 'Advanced',
+    custom: 'Customizable'
+  },
+  reportsExportValue: {
+    none: '—',
+    basic: 'Monthly',
+    advanced: '+ CSV',
+    custom: '+ segmentation'
+  },
+  analyticsValue: {
+    basic: 'Basic',
+    advanced: 'Advanced',
+    custom: 'Custom'
+  },
+  onboardingValue: {
+    none: '—',
+    basic: 'Guided setup',
+    advanced: '+ consulting',
+    custom: 'Custom strategy'
+  },
+  supportValue: {
+    basic: 'Basic',
+    advanced: 'Priority',
+    custom: 'Dedicated consulting support'
+  }
+};

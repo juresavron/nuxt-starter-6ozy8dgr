@@ -1,0 +1,90 @@
+export const pricing = {
+  badge: "Pacchetti Trasparenti",
+  title: "Pacchetti semplici e trasparenti",
+  subtitle: "Scegli il pacchetto più adatto alle tue esigenze",
+  monthly: "MENSILE",
+  yearly: "ANNUALE",
+  yearlySavings: "Risparmia fino al 20%",
+  selectPlan: "Seleziona pacchetto",
+  compareFeatures: "Confronta le funzionalità",
+  functionality: "Funzionalità",
+  package: "Pacchetto",
+  price: "Prezzo",
+  billing: "Fatturazione",
+  total: "Totale",
+  securePaymentInfo: "I tuoi dati sono criptati in modo sicuro",
+  securePaymentWith: "Pagamento sicuro con",
+  securePayment: "Pagamento sicuro",
+  moneyBackGuarantee: "14 giorni di rimborso",
+  support24h: "Supporto tecnico",
+  acceptedPaymentMethods: "Metodi di pagamento accettati",
+  proceedToCheckout: "Procedi al pagamento",
+  processing: "Elaborazione...",
+  termsNotice: "Procedendo, accetti i nostri Termini di Servizio e la Politica sulla Privacy. Il tuo pagamento sarà elaborato in modo sicuro attraverso il sistema di pagamento Stripe.",
+  
+  // Funzionalità della tabella di confronto
+  numLocations: "Numero di sedi",
+  nfcEquipment: "Attrezzatura NFC inclusa",
+  customReviewPage: "Pagina recensioni personalizzata",
+  gamification: "Gamification",
+  emailPhoneCapture: "Acquisizione email / telefono",
+  teamContacts: "Il team contatta i clienti insoddisfatti",
+  employeeRating: "Valutazione dipendenti (URL unico)",
+  companyDashboard: "Dashboard risultati aziendali",
+  weeklyReport: "Report settimanale al direttore",
+  reportsDataExport: "Report ed esportazione dati (CSV)",
+  analytics: "Analisi (reattività, tendenze)",
+  questionnaire: "Questionario sui motivi dell'insoddisfazione",
+  whiteLabel: "White-label (nessun logo ocenagor.si)",
+  integrations: "Integrazioni (CRM, Mailchimp, Zapier)",
+  onboardingSystem: "Onboarding del sistema",
+  support: "Supporto",
+  
+  // Valori specifici per alcune funzionalità
+  teamContactsValue: {
+    basic: "Il nostro team contatta",
+    advanced: "Report dopo chiamata"
+  },
+  employeeRatingValue: {
+    basic: "Media per dipendente",
+    advanced: "Integrazione con cartella HR"
+  },
+  dashboardValue: {
+    basic: "Base",
+    advanced: "Avanzato",
+    custom: "Personalizzabile"
+  },
+  
+  // Checkout
+  checkout: "Pagamento",
+  completeYourPurchase: "Completa il tuo acquisto di",
+  loggedInAs: "Accesso effettuato come",
+  monthlyBilling: "Fatturazione mensile",
+  yearlyBilling: "Fatturazione annuale",
+  secureCheckout: "Pagamento sicuro",
+  loadingCheckout: "Caricamento...",
+  checkoutError: "Errore di pagamento",
+  productNotFound: "Il pacchetto selezionato non è stato trovato.",
+  backToPricing: "Torna ai prezzi",
+  authRequired: "Autenticazione richiesta",
+  loginToContinuePurchase: "Accedi per continuare con il tuo acquisto",
+  login: "Accedi",
+  signup: "Crea account",
+  loginSecurityMessage: "Il tuo account ci permette di fornirti un'esperienza di acquisto sicura e l'accesso ai tuoi acquisti.",
+  
+  // Pagina di successo
+  paymentSuccess: "Pagamento riuscito!",
+  thankYouMessage: "Grazie per il tuo acquisto. Il tuo pagamento è stato elaborato con successo.",
+  orderReference: "Riferimento ordine",
+  orderSummary: "Riepilogo dell'ordine",
+  amount: "Importo",
+  paymentStatus: "Stato",
+  orderDate: "Data ordine",
+  processingOrder: "I dettagli del tuo ordine sono in fase di elaborazione. Riceverai presto un'email di conferma.",
+  paymentDetails: "Dettagli di pagamento",
+  paymentMethod: "Metodo di pagamento",
+  orderID: "ID ordine",
+  confirmationEmail: "Abbiamo inviato un'email di conferma con i dettagli del tuo ordine. Il nostro team ti contatterà a breve per configurare il tuo account.",
+  returnHome: "Torna alla home",
+  viewDashboard: "Visualizza dashboard"
+};

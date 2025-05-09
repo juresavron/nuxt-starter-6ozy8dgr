@@ -1,0 +1,28 @@
+@import './styles/base.css';
+@import './styles/animations.css';
+@import './styles/components.css';
+@import './styles/sections.css';
+@import './styles/utilities.css';
+@import './styles/layout.css';
+
+/* Custom styling for AI icons */
+.ai-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.ai-icon {
+  position: relative;
+  z-index: 1;
+}
+
+/* Make sure all cards in a row have the same height */
+@media (min-width: 1024px) {
+  .grid-cols-4 > div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}

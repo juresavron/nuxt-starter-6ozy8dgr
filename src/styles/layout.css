@@ -1,0 +1,181 @@
+@tailwind utilities;
+
+@layer components {
+  /* iOS-specific optimizations */
+  .ios-optimized {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-perspective: 1000;
+    perspective: 1000;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    will-change: transform, opacity;
+  }
+  
+  .custom-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(156, 163, 175, 0.5) transparent;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: rgba(156, 163, 175, 0.5);
+    border-radius: 20px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(156, 163, 175, 0.7);
+  }
+
+  .language-selector-button {
+    @apply relative flex items-center gap-2 px-4 py-2 text-sm font-medium
+           bg-white/80 backdrop-blur-sm rounded-lg border border-gray-200/50
+           hover:bg-white hover:border-gray-300 transition-all duration-300;
+  }
+
+  .language-selector-dropdown { 
+    @apply absolute right-0 mt-2 w-48 bg-white rounded-xl shadow-xl
+           border border-gray-100 overflow-hidden z-50;
+  }
+
+  .language-option {
+    @apply w-full flex items-center gap-3 px-4 py-3 text-sm transition-colors
+           hover:bg-gray-50 text-gray-600 hover:text-gray-900;
+  }
+
+  .language-option-active { 
+    @apply bg-gradient-to-r from-indigo-50 to-purple-50 text-indigo-600;
+  }
+
+  .floating-element {
+    @apply transform-gpu animate-[float_3s_ease-in-out_infinite];
+  }
+
+  .gradient-border { 
+    @apply relative before:absolute before:inset-0 before:-z-10 
+           before:p-[1px] before:rounded-[inherit]
+           before:bg-gradient-to-r before:from-indigo-500 before:to-purple-500
+           before:opacity-0 hover:before:opacity-100
+           before:transition-all before:duration-500 before:ease-in-out;
+  }
+
+  .shimmer {
+    @apply relative overflow-hidden before:absolute before:inset-0
+           before:bg-gradient-to-r before:from-transparent
+           before:via-white/10 before:to-transparent
+           before:translate-x-[-100%] hover:before:translate-x-[100%]
+           before:transition-transform before:duration-1000 before:ease-in-out;
+  }
+  
+  .company-logo {
+    @apply w-full h-full object-contain p-1;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+  }
+}
+
+/* iOS-specific styles to prevent swipe back */
+@supports (-webkit-touch-callout: none) {
+  html, body {
+    overscroll-behavior-x: none;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+  }
+  
+  /* Prevent pull-to-refresh */
+  body {
+    overscroll-behavior-y: contain;
+    touch-action: manipulation; /* Improve touch response */
+  }
+  
+  /* Block edge swipe */
+  .ios-edge-blocker {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 100%;
+    z-index: 9999;
+    background-color: transparent;
+    touch-action: none; /* Prevent all touch actions */
+  }
+  
+  /* Optimize animations for iOS to prevent flickering */
+  .motion-safe * {
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    will-change: transform, opacity;
+  }
+  
+  /* Apply hardware acceleration to specific components */
+  .hardware-accelerated {
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    transform: translateZ(0);
+    will-change: transform;
+  }
+
+  /* Fix for mobile menu on iOS */
+  .mobile-menu-content {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    perspective: 1000;
+    -webkit-overflow-scrolling: touch;
+    touch-action: manipulation;
+  }
+}
+
+/* Layout styles */
+.container {
+  @apply mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* Mobile optimization */
+@media (max-width: 640px) {
+  .ios-optimized {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    will-change: transform;
+  }
+  
+  /* Adjust icon sizing for mobile */
+  .icon-mobile-sm {
+    width: 1rem !important;
+    height: 1rem !important;
+  }
+  
+  .icon-mobile-md {
+    width: 1.25rem !important;
+    height: 1.25rem !important;
+  }
+  
+  /* Adjust text sizing for mobile */
+  .text-mobile-xs {
+    font-size: 0.75rem !important;
+    line-height: 1rem !important;
+  }
+  
+  .text-mobile-sm {
+    font-size: 0.875rem !important;
+    line-height: 1.25rem !important;
+  }
+}

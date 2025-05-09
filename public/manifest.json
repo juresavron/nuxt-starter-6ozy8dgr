@@ -1,0 +1,21 @@
+{
+  "name": "Pridobite višje ocene na Googlu | ocenagor.si",
+  "short_name": "ocenagor",
+  "description": "Pridobite višje ocene na Googlu s pametnim sistemom za zbiranje ocen. Povečajte svoj spletni ugled in pridobite več strank.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#4f46e5",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+/* Mobile text size utilities */
+.text-mobile-xs {
+  font-size: 0.75rem; /* 12px */
+}
+
+@media (min-width: 640px) {
+  .text-mobile-xs {
+    font-size: 0.875rem; /* 14px */
+  }
+}
+
+.text-mobile-sm {
+  font-size: 0.875rem; /* 14px */
+}
+
+@media (min-width: 640px) {
+  .text-mobile-sm {
+    font-size: 1rem; /* 16px */
+  }
+}
+
+/* iOS optimizations */
+.ios-optimized {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+/* Additional mobile-specific utilities */
+@media (max-width: 767px) {
+  .text-mobile-xs {
+    font-size: 0.65rem;
+  }
+  
+  .text-mobile-sm {
+    font-size: 0.75rem;
+  }
+  
+  .text-mobile-base {
+    font-size: 0.875rem;
+  }
+  
+  .p-mobile-reduced {
+    padding: 0.75rem;
+  }
+  
+  .icon-mobile-xs {
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+  
+  .icon-mobile-sm {
+    width: 0.875rem;
+    height: 0.875rem;
+  }
+  
+  .icon-mobile-sm {
+    width: 0.875rem;
+    height: 0.875rem;
+  }
+  
+  .icon-mobile-base {
+    width: 1rem;
+    height: 1rem;
+  }
+  
+  .w-mobile-full {
+    width: 100%;
+  }
+  
+  .h-mobile-auto {
+    height: auto;
+  }
+  
+  .flex-mobile-col {
+    flex-direction: column;
+  }
+}
+
+/* Tablet-specific utilities */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .text-tablet-sm {
+    font-size: 0.875rem;
+  }
+  
+  .text-tablet-base {
+    font-size: 1rem;
+  }
+  
+  .p-tablet-reduced {
+    padding: 1rem;
+  }
+  
+  .gap-tablet-reduced {
+    gap: 0.75rem;
+  }
+  
+  .flex-tablet-col {
+    flex-direction: column;
+  }
+  
+  .w-tablet-full {
+    width: 100%;
+  }
+}
